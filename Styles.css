@@ -1,0 +1,445 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #007bff;
+}
+
+/* Sección de Inicio */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-reservar {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: #218838;
+}
+
+.descripcion-hotel {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de Habitaciones */
+.habitaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.habitacion {
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.habitacion:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.habitacion img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.habitacion h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.habitacion p {
+    color: #666;
+}
+
+.btn-ver-mas {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de Servicios */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.servicio {
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.servicio:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.servicio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicio h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.servicio p {
+    color: #666;
+}
+
+/* Sección de Ubicación */
+#ubicacion {
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/* Sección de Reservas (Modal) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#reservas-form {
+    padding: 20px;
+}
+
+#reservas-form .campo {
+    margin-bottom: 20px;
+}
+
+#reservas-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#reservas-form input,
+#reservas-form select,
+#reservas-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#reservas-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reservas-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Sección de Testimonios */
+#testimonios {
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonios blockquote {
+    margin: 20px;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    text-align: left;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios blockquote p {
+    font-style: italic;
+    color: #333;
+}
+
+.testimonios blockquote cite {
+    font-weight: bold;
+    color: #666;
+}
+
+/* Sección de Blog */
+#blog {
+    padding: 20px;
+    text-align: center;
+}
+
+#blog article {
+    margin-bottom: 40px;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#blog article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#blog article p {
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contacto .campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contacto button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup-content .close:hover,
+.popup-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content form .campo {
+    margin-bottom: 20px;
+}
+
+.popup-content form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.popup-content form input,
+.popup-content form select,
+.popup-content form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup-content form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que la notificación esté por encima de otros elementos */
+}

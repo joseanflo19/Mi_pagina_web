@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso Tropical</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <h1>Hotel Paraíso Tropical</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" role="region">
+            <div class="banner">
+                <img src="https://img.freepik.com/fotos-premium/fachada-hotel-lujo-moderno-vista-al-mar_213438-6869.jpg" alt="Banner del hotel">
+                <div class="texto-banner">
+                    <h2>Bienvenido a Hotel Paraíso Tropical</h2>
+                    <p>Su oasis de tranquilidad y diversión en el Caribe</p>
+                    <a href="javascript:void(0);" onclick="openReservaPopup()" class="btn-reservar">Reservar ahora</a>
+                </div>
+            </div>
+
+            <div class="descripcion-hotel">
+                <h2>Disfrute de una experiencia inolvidable</h2>
+                <p>Hotel Paraíso Tropical ofrece a sus huéspedes una experiencia única en un entorno paradisíaco. Contamos con amplias y cómodas habitaciones, una piscina cristalina, un restaurante gourmet y un sinfín de actividades para toda la familia.</p>
+            </div>
+        </section>
+
+        <section id="habitaciones" role="region">
+            <h2>Nuestras habitaciones</h2>
+            <div class="habitaciones">
+                <article class="habitacion">
+                    <img src="https://cdn.easy-rez.com/production/hotels/a5ef0afdd823b3a0448bc3198a285aee/uploads/.rooms/th_0752692001531761234.jpg" alt="Habitación estándar">
+                    <h3>Estándar</h3>
+                    <p>Para una escapada confortable</p>
+                    <ul>
+                        <li>Cama doble o dos camas individuales</li>
+                        <li>Baño privado</li>
+                        <li>TV por cable</li>
+                        <li>Wi-Fi gratuito</li>
+                    </ul>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                </article>
+
+                <article class="habitacion">
+                    <img src="https://images.mirai.com/INFOROOMS/100121741/bJNcetQHTX513JwoVRcf/bJNcetQHTX513JwoVRcf_original.jpg" alt="Habitación superior">
+                    <h3>Superior</h3>
+                    <p>Espacio y confort para su estadía</p>
+                    <ul>
+                        <li>Cama king size</li>
+                        <li>Baño privado con jacuzzi</li>
+                        <li>TV por cable y DVD</li>
+                        <li>Wi-Fi gratuito</li>
+                        <li>Balcón con vista al mar</li>
+                    </ul>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                </article>
+
+                <article class="habitacion">
+                    <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/10/62/7e/c9.jpg" alt="Suite">
+                    <h3>Suite</h3>
+                    <p>Máximo lujo y exclusividad</p>
+                    <ul>
+                        <li>Dos habitaciones</li>
+                        <li>Dos baños privados</li>
+                        <li>Sala de estar</li>
+                        <li>Cocina equipada</li>
+                        <li>Terraza privada con vista al mar</li>
+                        <li>Servicio de mayordomo</li>
+                    </ul>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="servicios" role="region">
+            <h2>Nuestros servicios</h2>
+            <div class="servicios">
+                <article class="servicio">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/328865775.jpg?k=63681bf89354e75a88ca0951a15a68eed902cfa40f4f77fdb1b75d52ab825a01&o=&hp=1" alt="Piscina">
+                    <h3>Piscina</h3>
+                    <p>Relájese y disfrute de nuestra amplia piscina al aire libre. Abierto todos los días de 9:00 a.m. a 7:00 p.m.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="https://www.hotelcasablancasanandres.com/assets/cache/uploads/restaurante-tropical/1920x1036/mesas-comedor-restaurante-tropical-hotel-casablanca-san-andres.jpg" alt="Restaurante">
+                    <h3>Restaurante</h3>
+                    <p>Disfrute de deliciosas comidas en nuestro restaurante gourmet, abierto para desayuno, almuerzo y cena.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/b6/0e/82/bahia-tropical-hotel.jpg" alt="Spa">
+                    <h3>Spa</h3>
+                    <p>Relájese y rejuvenezca en nuestro spa de clase mundial, donde ofrecemos una variedad de tratamientos y masajes.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="https://www.hotel-palm-beach.com/sites/default/files/styles/hero_480x205_/public/2022-09/Seaside_Palm_Beach_Fitness-0123_comp_0.jpg?h=6f8e2d4a&itok=VCCe0RGW" alt="Gimnasio">
+                    <h3>Gimnasio</h3>
+                    <p>Manténgase en forma durante su estancia en nuestro gimnasio totalmente equipado, abierto las 24 horas del día.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="ubicacion" role="region">
+            <h2>Nuestra ubicación</h2>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.7654641021!2d-81.70677868554238!3d12.583333991059688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e278a7f803b6b%3A0x1c396c2f76d3c65c!2sHotel%20Paraiso%20Tropical!5e0!3m2!1sen!2sus!4v1684844400000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="testimonios" role="region">
+            <h2>Testimonios de nuestros huéspedes</h2>
+            <div class="testimonios">
+                <blockquote>
+                    <p>"¡Una experiencia maravillosa! El hotel es hermoso y el personal es muy amable y atento."</p>
+                    <cite>- Juan Pérez</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Disfrutamos mucho de nuestra estadía. La comida en el restaurante es excelente y las instalaciones son impecables."</p>
+                    <cite>- María Gómez</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Definitivamente volveremos. El hotel superó nuestras expectativas en todos los aspectos."</p>
+                    <cite>- Pedro Rodríguez</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="blog" role="region">
+            <h2>Blog</h2>
+            <article>
+                <h3>Noticias del hotel</h3>
+                <p>En este blog, te mantendremos informado sobre las últimas noticias y promociones del Hotel Paraíso Tropical.</p>
+            </article>
+
+            <article>
+                <h3>Nueva oferta de verano</h3>
+                <p>Disfruta de una oferta especial de verano en nuestras habitaciones. ¡No te pierdas esta oportunidad!</p>
+            </article>
+
+            <article>
+                <h3>Nuevo restaurante en el hotel</h3>
+                <p>Estamos emocionados de anunciar la apertura de nuestro nuevo restaurante, donde podrás disfrutar de deliciosas comidas y bebidas.</p>
+            </article>
+
+            <article>
+                <h3>Fiesta de fin de año en el hotel</h3>
+                <p>Únete a nosotros para celebrar el fin de año en estilo. ¡Reserva ya tu habitación y no te pierdas la fiesta!</p>
+            </article>
+        </section>
+
+        <section id="contacto" role="region">
+            <h2>Contacto</h2>
+            <form id="contactoForm" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre-contacto">Nombre:</label>
+                    <input type="text" id="nombre-contacto" name="nombre-contacto" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email-contacto">Correo electrónico:</label>
+                    <input type="email" id="email-contacto" name="email-contacto" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto-contacto">Asunto:</label>
+                    <input type="text" id="asunto-contacto" name="asunto-contacto" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje-contacto">Mensaje:</label>
+                    <textarea id="mensaje-contacto" name="mensaje-contacto" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Popup de Reserva -->
+    <div id="reservaPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeReservaPopup()">&times;</span>
+            <h2>Reservar ahora</h2>
+            <form id="reservaForm" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre-reserva">Nombre:</label>
+                    <input type="text" id="nombre-reserva" name="nombre-reserva" required>
+                </div>
+                <div class="campo">
+                    <label for="email-reserva">Correo electrónico:</label>
+                    <input type="email" id="email-reserva" name="email-reserva" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha-llegada">Fecha de llegada:</label>
+                    <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha-salida">Fecha de salida:</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida" required>
+                </div>
+                <div class="campo">
+                    <label for="habitacion">Tipo de habitación:</label>
+                    <select id="habitacion" name="habitacion" required>
+                        <option value="estandar">Estándar</option>
+                        <option value="superior">Superior</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notificación de éxito -->
+    <div id="notification" class="notification" style="display:none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>Su reserva ha sido realizada con éxito.</p>
+    </div>
+
+    <!-- Notificación de éxito de contacto -->
+    <div id="contactNotification" class="notification" style="display:none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>Su mensaje ha sido enviado con éxito.</p>
+    </div>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Hotel Paraíso Tropical. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openReservaPopup() {
+            document.getElementById('reservaPopup').style.display = 'block';
+        }
+
+        function closeReservaPopup() {
+            document.getElementById('reservaPopup').style.display = 'none';
+        }
+
+        function clearReservaForm() {
+            document.getElementById('reservaForm').reset();
+        }
+
+        document.querySelector('#reservaPopup form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío real del formulario
+            closeReservaPopup();
+            showNotification();
+            clearReservaForm();
+        });
+
+        function showNotification() {
+            var notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 3000); // Ocultar la notificación después de 3 segundos
+        }
+
+        // Funciones para el formulario de contacto
+        function clearContactoForm() {
+            document.getElementById('contactoForm').reset();
+        }
+
+        document.getElementById('contactoForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío real del formulario
+            showContactNotification();
+            clearContactoForm();
+        });
+
+        function showContactNotification() {
+            var notification = document.getElementById('contactNotification');
+            notification.style.display = 'block';
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 3000); // Ocultar la notificación después de 3 segundos
+        }
+    </script>
+
+</body>
+</html>
